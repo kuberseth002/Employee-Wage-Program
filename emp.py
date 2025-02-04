@@ -13,7 +13,7 @@ def emp_attd():
 total_hours = 0
 
 def calculate_wages():
-    global total_hours  
+    global total_hours
     worktype = random.randint(0, 2)  
     part_time_work = 4
     full_time_work = 8
