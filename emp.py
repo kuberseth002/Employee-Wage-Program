@@ -1,6 +1,6 @@
 import random
 
-def aborpre():
+def emp_attd():
     randnumber = random.random()
     threshold = 0.5
     if randnumber < threshold:
@@ -20,7 +20,7 @@ def calculate_wages():
     wages_per_hour = 20
     total_wages = 0
 
-    absent_or_present = aborpre()
+    absent_or_present = emp_attd()
 
     if absent_or_present == 1:
         if worktype == 0:
