@@ -9,6 +9,8 @@ def emp_attd():
     else:
         print("present")
         return 1
+      
+total_hours=0
 
 def calculate_wages():
     worktype = random.randint(0, 2)  
@@ -36,6 +38,6 @@ def calculate_wages():
             print(f"Total wages: {total_wages}")
         else:
             print("Invalid input")
+        
+    print(f"Total worked so far:{total_hours}")
 calculate_wages()
-
-
