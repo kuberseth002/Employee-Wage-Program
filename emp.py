@@ -39,5 +39,5 @@ def calculate_wages():
         else:
             print("Invalid input")
         
-    print(f"Total worked so far:{total_hours}")
+    print(f"Total worked hours so far:{total_hours}")
 calculate_wages()
