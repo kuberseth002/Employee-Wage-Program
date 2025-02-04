@@ -1,6 +1,6 @@
 import random
 
-def emp_attd():
+def aborpre():
     randnumber = random.random()
     threshold = 0.5
     if randnumber < threshold:
@@ -9,18 +9,18 @@ def emp_attd():
     else:
         print("present")
         return 1
-      
-total_hours=0
+
+total_hours = 0
 
 def calculate_wages():
+    global total_hours  
     worktype = random.randint(0, 2)  
     part_time_work = 4
     full_time_work = 8
     wages_per_hour = 20
-    total_hours = 0
     total_wages = 0
 
-    absent_or_present = emp_attd()
+    absent_or_present = aborpre()
 
     if absent_or_present == 1:
         if worktype == 0:
@@ -38,6 +38,8 @@ def calculate_wages():
             print(f"Total wages: {total_wages}")
         else:
             print("Invalid input")
-        
-    print(f"Total worked hours so far:{total_hours}")
-calculate_wages()
+
+for i in range(20):
+    calculate_wages()
+
+print(f"Total hours worked after 20 days: {total_hours}")
